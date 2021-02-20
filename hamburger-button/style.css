@@ -1,0 +1,46 @@
+
+body {
+    margin: 0;
+}
+
+div {
+    height: 100vh;
+    background-color: rebeccapurple;
+    width: fit-content;
+    padding: 16px;
+    position: relative;
+    right: 147px;
+    transition: right 1.5s ease-in-out;
+}
+
+.active {
+    right: 0px;
+}
+
+
+
+button {
+    color: white;
+    background-color: purple;
+    border: none;
+    font-size: 28px;
+    outline-style: none;
+    position: relative;
+    left: 128px;
+}
+
+button:hover {
+    box-shadow: 2px 2px 4px -1px white;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    font-weight: 900;
+    font-family: sans-serif;
+    line-height: 2.5;
+    text-decoration: none;  
+}
