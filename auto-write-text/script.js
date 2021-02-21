@@ -8,7 +8,7 @@ function autoText(){
     var textIncreementation = setInterval(() => {
         document.getElementById('auto-text').innerHTML = text.slice(0, index);
         index++;
-        console.log(index);
+//         console.log(index);
 
         //when complete text is displayed
         if(index > text.length){
@@ -17,7 +17,7 @@ function autoText(){
             var textDecreementation = setInterval(() => {
                 document.getElementById('auto-text').innerHTML = text.slice(0, index);
                 index--;
-                console.log(index);
+//                 console.log(index);
 
                 if(index == 0){
                     autoText(); 
