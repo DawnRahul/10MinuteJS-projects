@@ -3,6 +3,7 @@
 body {
     min-height: 100vh;
     background-color: rgb(169, 255, 89);
+    transition: background-color 0.7s;
     display: flex;
     justify-content: center;
     align-items: center;
