@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,400;1,700&display=swap');
+
+body {
+    min-height: 100vh;
+    /* background-color: gray; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4f5fc+0,bfe8f9+50,9fd8ef+51,2ab0ed+100;Blue+Gloss+%235 */
+background: #e4f5fc; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* I was working here  */
+.carousel {
+    overflow: hidden;
+    max-width: fit-content;
+    border: 5px dotted #effbfa;
+    width: 600px;
+}
+
+.image-container {
+    min-width: max-content;
+    display: flex;    /* To remove natural spacing between images */
+    transform: translateX(0px);
+    transition: transform 3s linear;
+    position: relative;
+}
+
+
+img {
+    width: 600px;
+    height: auto;
+    transition: transform 2s;
+}
+
+@media only screen and (max-width: 600px){
+    .carousel {
+        width: 280px;
+    }
+
+    
+    img {
+        width: 280px;
+    }
+}
