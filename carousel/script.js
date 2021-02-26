@@ -37,7 +37,7 @@ for(let i=-1 ; i <= imgArray.length-3; i++){
 
 
 
-setTimeout(() => {
+
 
 
 // Slide all images after 3 seconds of interval 
@@ -63,5 +63,4 @@ imgArray[index + 1].style.transform = imgArray[index].style.transform;
 imgArray[index].style.transform = tempVar;
 
 
-}, 3000);
 }, 3000);
