@@ -47,5 +47,6 @@ img {
     
     img {
         width: 280px;
+        transition: transform 1s;
     }
 }
