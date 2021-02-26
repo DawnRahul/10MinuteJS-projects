@@ -2,23 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Projects</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Small JS Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,400;1,700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            margin: 0;
+            background-color: #8383f9;
+            color: white;
+        }
+
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            /* text-align: center; */
+            font-size: 32px;
+            border-bottom: 2px solid white;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            line-height: 3;
+            letter-spacing: 1.5px;
+        }
+
+        li::first-letter {
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+
+    </style>
+
 </head>
 <body>
-    <h1>My Carousel</h1>
-    <div class="carousel">
-        <div class="image-container"> 
-            <!-- using first image just to make my carousel work for now, later have to apply some good logic -->
-            <img class="carousel-image c-image-1" src="images/company.jpg" alt="company image">
-            <img class="carousel-image c-image-2" src="images/company01.jpg" alt="company image 2">
-            <img class="carousel-image c-image-3" src="images/company02.jpg" alt="comapny image 3">
-            <img class="carousel-image c-image-4" src="images/company03.jpg" alt="company image 4">
-        </div>
-    </div>
-
-    <script src="script.js" defer></script>    <!-- defer attribute tells browser to run script after page has loaded -->
+    <h1>Small JS Projects</h1>
+    <ol>
+        <li><a href="hamburger-button/index.html">Hamburger Button</a></li>
+        <li><a href="toast-notification/index.html">Toast Notification</a></li>
+        <li><a href="auto-write-text/index.html">Auto Write Text</a></li>
+        <li><a href="pop-up/index.html">Pop Up</a></li>
+        <li><a href="heart-rain/index.html">Heart Rain</a></li>
+        <li><a href="background-changer/index.html">Background Changer</a></li>
+        <li><a href="dark-mode/index.html">Dark Mode</a></li>
+        <li><a href="carousel/index.html">Carousel</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ol>
 </body>
 </html>
