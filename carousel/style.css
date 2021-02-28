@@ -24,6 +24,11 @@ background: linear-gradient(135deg,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 
     width: 600px;
 }
 
+.dummy-image {
+    visibility: hidden;
+    position: relative;
+}
+
 .image-container {
     min-width: max-content;
     display: flex;    /* To remove natural spacing between images */
