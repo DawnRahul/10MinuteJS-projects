@@ -17,25 +17,25 @@ window.addEventListener("load", ()=>{
 
     //making array of image elements
 let imgArray = [imgContainer1, imgContainer2, imgContainer3, imgContainer4];
-
-imgArray[0].style.position = "relative";
-imgArray[0].style.visibility = "hidden";
+//Below two line's works are done in CSS file
+// imgArray[0].style.position = "relative";
+// imgArray[0].style.visibility = "hidden";
 
 
     // setting position as absolute except for the first image for all images
     for(let i=1 ; i <= imgArray.length-1; i++){
         imgArray[i].style.position = "absolute";
+
+         //initially images will slide at z-index of -2, except image which have to display first
+         if(i !== 2){
+            imgArray[i].style.zIndex = -2;
+        }
     }
     
     // setting initial position for all images
     for(let i=-1 ; i <= imgArray.length-3; i++){
         imgArray[i+2].style.transform = `translateX(${ carouselWidth * i}px)`;
         // imgArray[i+2].style.transform = `translateX(${600 * i}px)`;
-        
-        //initially images will slide at z-index of -5, except image which have to display first
-        if(i !== 0){
-            imgArray[i+2].style.zIndex = -2;
-        }
         
     }
 
